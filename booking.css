@@ -22,7 +22,7 @@ a:active {text-decoration: none}
 
 .tittel{
     position: absolute; left: 44%;
-	display: flex;
+	display: inline-flex;
 }
 
 .nav{
@@ -84,6 +84,41 @@ a:active {text-decoration: none}
 	margin-right: auto;
 }
 
+.footer{
+	display: inline-flex;
+	justify-content:space-between;
+	gap: 50px;
+	text-align: center;
+	font-size: large;
+	background-color:  whitesmoke;
+	width: 100%;
+}
+.footer-align{
+	padding: 20px;
+	justify-content: center;
+}
+.footer dt{
+	line-height: 1.2em;
+}
+.footer a{
+	line-height: 2em;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+.footer-left{
+	width: 33%;
+	margin-top: 3%;
+	font-size: 1.5em;
+}
+.footer-center{
+	width: 33%;
+	margin-bottom: 2em;
+	font-size: 1.2em;
+}
+.footer-right{
+	width: 33%;
+	margin-bottom: 2em;
+}
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
