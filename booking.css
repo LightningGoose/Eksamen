@@ -19,33 +19,81 @@ a:active {text-decoration: none}
 	background-color: white;
 }
 
-.tittel{
-    position: absolute; left: 44%;
-	display: inline-flex;
+h1 {
+	font-size: 1.5em;
+	color: black;
+	margin: 0;
 }
 
-.nav{
-	display: flex;
-	justify-content:space-between;
-	gap: 50px;
-	text-align: center;
-	background-color:  whitesmoke;
-	border: 0px solid;
-	height: 15%;
-	padding: 1%;
+header {
+	background-color: rgba(251, 255, 0, 0.247);
+	padding: 0.8em 0;
 }
-.nav a {
-	margin-left: 5%;
-	margin-right: 5%;
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	color: black;
+}
+
+nav li {
+	margin-left: 2em;
+	color: black;
+}
+
+nav a:hover, nav a:focus {
+    color: #fd5f00;
+}
+
+nav a {
+	color: black;
+}
+
+@media (max-width: 640px) {
+	.container {
+	  text-align: center;
+	}
+  
+	.container-nav {
+	  flex-direction: column;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	}
+  
+	nav li {
+	  margin: 0.8em 0;
+	}
+  }
+
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.container-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .grid-container{
 	text-align: center;	
-	padding-top: 2%;
     padding-right: 20%;
     padding-bottom: 2%;
     padding-left: 20%;
 }
+
+.booking {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .box1{
     display: block;
@@ -75,16 +123,10 @@ a:active {text-decoration: none}
     min-height:30px; 
     min-width: 120px
 }
-
-.text1{
-	display: block;
-	position: absolute;
+button:hover {
+	background-color: rgba(245, 139, 68, 0.719);
 }
 
-.text2 {
-	display: block;
-	position: absolute;
-}
 .text-center{
 	display: block;
 	position: relative;
@@ -93,14 +135,13 @@ a:active {text-decoration: none}
 }
 
 .footer{
-	display: inline-flex;
-	justify-content:space-between;
-	gap: 50px;
-	text-align: center;
-	font-size: large;
-	background-color:  whitesmoke;
-	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
 .footer-align{
 	padding: 20px;
 	justify-content: center;
