@@ -8,21 +8,25 @@ a:active {text-decoration: none}
     color: black;
 }
 
-.noMargin{
+.noMargin {
 	margin: 0%;
 	outline: 0%;
 }
 
-.main{
+.main {
 	min-width: 100%;
 	min-height: 100%;
 	background-color: #FCF7F8;
-	
 }
+
  #gradient {
 	min-height: 100%;
 	background-color: #FCF7F8;
-	background-image: linear-gradient(180deg, #17c3b24b 60%, #FCF7F8 );
+	background-image: linear-gradient(180deg, #17c3b24b 30%, #FCF7F8 85%);
+}
+
+.logo {
+	list-style: none;
 }
 
 h1 {
@@ -72,7 +76,7 @@ nav a {
 	nav li {
 	  margin: 0.8em 0;
 	}
-  }
+}
 
 .container {
 	width: 100%;
@@ -86,7 +90,7 @@ nav a {
 	align-items: center;
 }
 
-.grid-container{
+.grid-container {
 	text-align: center;	
     margin-right: auto;
     margin-left: auto;
@@ -101,20 +105,24 @@ nav a {
 	margin-right: auto;
 }
 
-
-.box-storsalen{
+.box-storsalen {
     display: block;
     position: relative;
-	margin-top: 4%;
+	margin-top: 2%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.box2-lillesalen{
+.box-lillesalen{
 	display: block;
     position: relative;
+	margin-top: 1%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+img {
+	border-radius: 50%;
 }
 
 .button {
@@ -127,44 +135,48 @@ nav a {
     min-height:30px; 
     min-width: 120px
 }
+
 button:hover {
 	background-color: rgba(245, 139, 68, 0.719);
 }
 
-
-.text-center{
+.text-center {
 	display: block;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.footer{
+.footer {
   display: block;
   color: white;
   background-color: #0D1821;
 }
 
-.footer dt{
+.footer dt {
 	line-height: 1.2em;
 	font-size: 1.2em;
 }
-.footer a{
+
+.footer a {
 	line-height: 1.5em;
 	font-size: 1.1em;
 	text-decoration: none;
 	color: white;
 }
-.footer-left{
+
+.footer-left {
 	display: inline-block;
 	width: 49%;
 	text-align: center;
 }
-.footer-right{
+
+.footer-right {
 	display: inline-block;
 	width: 49%;
 	text-align: center;
 }
+
 .center-content {
 	justify-content: center;
 }
@@ -177,14 +189,14 @@ button:hover {
 	  margin: auto;
 	  align-items: center;
 	}
-  }
+}
 
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
-  }
+}
   
-  @media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) {
 	/* For desktop: */
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
@@ -201,5 +213,5 @@ button:hover {
 	img {
 		max-width: 100%;
 	}
-  }
+}
 
